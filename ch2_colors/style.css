@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    /* 1. color name  */
+    /* color: blue; */
+
+    /* 2. RGB  */
+    /* color: rgb(0, 0, 255);  */
+
+    /* 3. Hexidecimal  */
+    color: #ffffff;
+
+    /* 4. HSL  */
+    /* color: hsl(20, 84.6%, 43%);  */
+
+}
+
+div {
+    background-color: rgba(0, 0, 255, 1);
+    height: 200px;
+    width: 200px;
+    /* opacity: 0.5; */
+
+}
