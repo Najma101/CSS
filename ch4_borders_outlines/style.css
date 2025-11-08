@@ -1,0 +1,20 @@
+div {
+    /* border-style: solid; 
+    border-width: 5px;
+    border-color: green; */
+    border-radius: 20px;
+    /* border-top-color: blue;
+    border-bottom-color: purple; */
+    border: #ff0000 dashed 5px;
+    /* border-style: dotted; */
+    background-color: black;
+    color: white;
+    outline-style: solid;
+    outline-color: rgb(69, 23, 206);
+    outline-width: 5px;
+    outline-offset: 10px;
+    
+
+
+
+}
