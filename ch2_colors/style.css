@@ -61,7 +61,7 @@ p {
 /* opacity property (makes whole element transparent) */
 .opacity-css {
     background-color: teal;
-    opacity: 0.5; /* affects background + text */
+    opacity: 0.4; /* affects background + text */
 }
 
 /* rgba() */
