@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro to CSS</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <style>
-     h1 {
-        color: red;
-        text-align: center;
-        font-size: 80px;
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 1 - Intro</title>
 
-     }  
-    </style> -->
+    <!-- INTERNAL CSS example -->
+    <style>
+        /* This is an internal CSS comment */
+        /* Internal CSS: written inside <style> tags in the head */
+        h1 {
+            color: rgb(126, 31, 193);
+            font-family:monospace;
+            background: #2a021e;
+            padding: 10px;
+            border-left: 4px solid rgb(102, 27, 96);
+        }
+    </style>
+
+    <!-- Linking EXTERNAL CSS -->
+    <!-- External CSS lives in a separate .css file -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-        <!-- <h1 style="color: blue; text-align: center; font-size: 80px;" >Lets learn CSS</h1> -->
-    <!-- <h1 style="color: blue; text-align: center; font-size: 80px;">Lets learn CSS</h1> -->
 
+    <h1>Welcome to CSS Intro</h1>
 
-    <h1 class="thefirst">Lets learn CSS</h1>
-    <br>
-    <h1 class="thefirst">Lets learn CSS</h1>
-</body>
-</html>
+    <!-- Paragraph to demonstrate external CSS -->
+    <p class="external-example">
+        This paragraph is styled using an *external* CSS file.
+    </p>
+
+    <!-- INLINE CSS example -->
+    <p style="color: purple; font-weight: bold;">
+        This paragraph uses inline CSS. (Inline = inside the HTML tag)
+    </p>
+
+    <h2 id="selector-demo">What is CSS?</h2>
+    <p>
+        CSS (Cascading Style Sheets) is a language used to style HTML elements.
+        It controls colours, spacing, layouts, fonts, borders, sizes, and more.
+    </p>
+
+    <h2 id="selector-demo">Basic Terminology</h2>
+
+    <ul class="external-example">
+        <li><strong>Selector:</strong> the part of CSS that selects which HTML element(s) to style.</li>
+        <li><strong>Property:</strong> the specific style you want to change (e.g., <code>color</code>, <co

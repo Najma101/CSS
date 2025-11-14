@@ -1,12 +1,44 @@
 
-/* the boss wants the text colour to be red */
-.thefirst {
-  color: red;
-  text-align: center;
-  font-size: 80px;
+/* EXTERNAL CSS FILE */
+/* Comments in CSS start with slash + asterisk */
+
+/*
+   SELECTORS:
+   - element selector (p)
+   - class selector (.className)
+   - ID selector (#idName)
+   - universal selectors ( * ) -> for everything
+*/
+
+body {
+    background: #fafa;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
 }
 
-* {
-  border: solid 2px blue;
-  margin: 20px;
+/* Element selector */
+p {
+    color: #69021a;
+    line-height: 1.6;
 }
+
+/* Class selector */
+.selector-demo {
+    color: blue;
+    font-size: 18px;
+}
+
+/* ID selector */
+#selector-demo {
+    background: #900767;
+    padding: 10px;
+    border-left: 4px solid rgb(12, 1, 11);
+    font-family:monospace;
+}
+
+/* Styling the external example paragraph */
+.external-example {
+    color: rgb(70, 16, 83);
+    font-style: italic;
+}
+
