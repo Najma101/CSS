@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 2 - CSS colours</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Colors</title>
+
+    <!-- Internal CSS example -->
+    <style>
+        h1 {
+            color: steelblue;
+            text-align: center;
+            background: rgb(48, 1, 79);
+            padding: 5px;
+            border-left: 4px solid steelblue
+        }
+    </style>
+
+    <!-- Link to external CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>chapter 2: CSS colors</h1>
-    <div>
-        
+
+    <h1>CSS Colors – Full Guide</h1>
+
+    <p class="intro">
+        CSS offers many ways to set color: names, RGB, HEX, HSL, and opacity (RGBA/HSLA).
+    </p>
+
+    <!-- -------------------------------------------------- -->
+    <h2>1. CSS Color Names</h2>
+    <p>CSS has ~140 predefined color names like <code>red</code>, <code>blue</code>, <code>gold</code>, <code>tomato</code>, etc.</p>
+
+    <div class="example-box color-name">This box uses a **color name** (orchid).</div>
+
+    <!-- -------------------------------------------------- -->
+    <h2>2. RGB (Red, Green, Blue)</h2>
+    <p>
+        RGB defines color using red, green, and blue values from <strong>0 to 255</strong>.<br>
+        Example: <code>rgb(255, 0, 0)</code> = red
+    </p>
+
+    <div class="example-box rgb-box">
+        This box uses **RGB**: rgb(100, 180, 255)
+    </div>
+
+    <!-- -------------------------------------------------- -->
+    <h2>3. HEX (Hexadecimal)</h2>
+    <p>
+        HEX is a 6-digit code representing colors using numbers + letters (0-9, A-F).<br>
+        Example: <code>#ff0000</code> = red
+    </p>
+
+    <div class="example-box hex-box">
+        This box uses **HEX**: #6a0dad
+    </div>
+
+    <!-- -------------------------------------------------- -->
+    <h2>4. HSL (Hue, Saturation, Lightness)</h2>
+    <p>
+        HSL stands for:
+    </p>
+
+    <ul>
+        <li><strong>Hue:</strong> 0–360 (the color on the color wheel)</li>
+        <li><strong>Saturation:</strong> color intensity (0%–100%)</li>
+        <li><strong>Lightness:</strong> brightness (0%–100%)</li>
+    </ul>
+
+    <p>Example: <code>hsl(200, 80%, 60%)</code></p>
+
+    <div class="example-box hsl-box">
+        This box uses **HSL**: hsl(200, 80%, 60%)
+    </div>
+
+    <!-- -------------------------------------------------- -->
+    <h2>5. Opacity (Alpha Channel)</h2>
+    <p>
+        Opacity controls transparency.<br><br>
+
+        <strong>Three main ways:</strong>
+        <ul>
+            <li><code>opacity</code> property → affects whole element</li>
+            <li><code>rgba()</code> → RGB + alpha (0 to 1)</li>
+            <li><code>hsla()</code> → HSL + alpha (0 to 1)</li>
+        </ul>
+    </p>
+
+    <div class="example-box opacity-css">
+        opacity: 0.5 (affects whole box)
+    </div>
+
+    <div class="example-box rgba-box">
+        rgba(255, 99, 71, 0.5) — semi-transparent tomato
+    </div>
+
+    <div class="example-box hsla-box">
+        hsla(200, 80%, 60%, 0.5) — semi-transparent blue
     </div>
 
 </body>
