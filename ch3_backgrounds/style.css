@@ -1,12 +1,100 @@
+/* =============================== */
+/* CH3 – CSS Backgrounds           */
+/* =============================== */
+
+/* 1. Background Color */
 body {
-    height: 200px;
-    width: 200px;
-    background-color: blue;
-    background-image: url(https://schmidtocean.org/wp-content/uploads/Figure-1-web-1140x642.jpg); 
-    background-repeat: repeat;
+    background-color: rgb(1, 91, 61);
+}
+.bg-color-demo {
+    background-color: lightblue; /* sets a solid background colour */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* 2. Background Image */
+.bg-image-demo {
+    background-image: url('https://picsum.photos/300'); /* example placeholder image */
     background-size: cover;
-    
+    padding: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
 
 
-    
+/* 3. Background Size */
+.bg-size-demo {
+    background-image: url('https://picsum.photos/200');
+    background-size: contain; 
+    /* contain = fit entire image inside box
+       cover = fill entire box, may crop
+       auto = original size
+       200px = manual size */
+    background-repeat: no-repeat;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* 4. Background Position */
+.bg-position-demo {
+    background-image: url('https://picsum.photos/200');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right bottom; 
+    /* You can use: top, center, bottom, left, right */
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* 5. Background Repeat */
+.bg-repeat-demo {
+    background-image: url('https://picsum.photos/100');
+    background-repeat: repeat-x;
+    /* repeat = default (both directions)
+       repeat-x = only horizontally
+       repeat-y = only vertically
+       no-repeat = no repeating */
+    background-size: 100px;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* 6. Background Attachment */
+.bg-attachment-demo {
+    background-image: url('https://picsum.photos/400');
+    background-size: cover;
+    background-attachment: fixed; 
+    /* fixed = image stays still when scrolling
+       scroll = default (moves with page) */
+    padding: 80px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/* 7. Background Shorthand */
+.bg-shorthand-demo {
+    /* background: color image repeat position/size attachment */
+    background: 
+        #444 
+        url('https://picsum.photos/250') 
+        no-repeat 
+        center/cover 
+        scroll;
+    color: white;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* 8. Opacity */
+.opacity-demo {
+    background-color: purple;
+    opacity: 0.7; /* 1 = solid, 0.5 = 50% transparent, 0 = invisible */
+    padding: 40px;
+    color: white;
 }
